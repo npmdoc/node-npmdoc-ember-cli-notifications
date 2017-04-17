@@ -1,0 +1,341 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/stonecircle/ember-cli-notifications"
+
+    >ember-cli-notifications (v4.1.6)</a>
+</h1>
+<h4>Atom inspired notification messages for ember-cli</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications">module ember-cli-notifications</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.environment">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.importFontAwesome">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.included">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ember-cli-notifications.</span>options</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">ember-cli-notifications.</span>name</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.environment">module ember-cli-notifications.environment</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.environment.environment">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.importFontAwesome">module ember-cli-notifications.importFontAwesome</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.included">module ember-cli-notifications.included</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.included.included">
+            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
+            <span class="apidocSignatureSpan">(app)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-notifications" id="apidoc.module.ember-cli-notifications">module ember-cli-notifications</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.environment" id="apidoc.element.ember-cli-notifications.environment">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">environment = function () {
+  return { };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.importFontAwesome" id="apidoc.element.ember-cli-notifications.importFontAwesome">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">importFontAwesome = function (app) {
+  var projectConfig = this.project.config(app.env);
+  var config = projectConfig[&#x27;ember-cli-notifications&#x27;] || { includeFontAwesome: false };
+
+  if (config.includeFontAwesome) {
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.eot&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.svg&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.ttf&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.woff&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.woff2&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/css/font-awesome.css&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  ]
+}
+  },
+
+  included: function(app) {
+this._super.included.call(this, app);
+
+this.<span class="apidocCodeKeywordSpan">importFontAwesome</span>(app);
+  },
+
+  importFontAwesome: function(app) {
+var projectConfig = this.project.config(app.env);
+var config = projectConfig[&#x27;ember-cli-notifications&#x27;] || { includeFontAwesome: false };
+
+if (config.includeFontAwesome) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.included" id="apidoc.element.ember-cli-notifications.included">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
+  this._super.included.call(this, app);
+
+  this.importFontAwesome(app);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-notifications.environment" id="apidoc.module.ember-cli-notifications.environment">module ember-cli-notifications.environment</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.environment.environment" id="apidoc.element.ember-cli-notifications.environment.environment">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">environment = function () {
+  return { };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-notifications.importFontAwesome" id="apidoc.module.ember-cli-notifications.importFontAwesome">module ember-cli-notifications.importFontAwesome</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome" id="apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">importFontAwesome = function (app) {
+  var projectConfig = this.project.config(app.env);
+  var config = projectConfig[&#x27;ember-cli-notifications&#x27;] || { includeFontAwesome: false };
+
+  if (config.includeFontAwesome) {
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.eot&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.svg&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.ttf&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.woff&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/fonts/fontawesome-webfont.woff2&#x27;, {
+      destDir: &#x27;fonts&#x27;
+    });
+    app.import(app.bowerDirectory + &#x27;/font-awesome/css/font-awesome.css&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  ]
+}
+  },
+
+  included: function(app) {
+this._super.included.call(this, app);
+
+this.<span class="apidocCodeKeywordSpan">importFontAwesome</span>(app);
+  },
+
+  importFontAwesome: function(app) {
+var projectConfig = this.project.config(app.env);
+var config = projectConfig[&#x27;ember-cli-notifications&#x27;] || { includeFontAwesome: false };
+
+if (config.includeFontAwesome) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ember-cli-notifications.included" id="apidoc.module.ember-cli-notifications.included">module ember-cli-notifications.included</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ember-cli-notifications.included.included" id="apidoc.element.ember-cli-notifications.included.included">
+        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
+        <span class="apidocSignatureSpan">(app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
+  this._super.included.call(this, app);
+
+  this.importFontAwesome(app);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
