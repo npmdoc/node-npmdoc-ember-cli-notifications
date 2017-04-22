@@ -1,4 +1,7 @@
-# api documentation for  [ember-cli-notifications (v4.1.6)](https://github.com/stonecircle/ember-cli-notifications)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-cli-notifications.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-cli-notifications) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-cli-notifications.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-cli-notifications)
+# npmdoc-ember-cli-notifications
+
+#### api documentation for  [ember-cli-notifications (v4.1.6)](https://github.com/stonecircle/ember-cli-notifications)  [![npm package](https://img.shields.io/npm/v/npmdoc-ember-cli-notifications.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ember-cli-notifications) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ember-cli-notifications.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ember-cli-notifications)
+
 #### Atom inspired notification messages for ember-cli
 
 [![NPM](https://nodei.co/npm/ember-cli-notifications.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ember-cli-notifications)
@@ -115,7 +118,8 @@
         "start": "ember server",
         "test": "ember try:each"
     },
-    "version": "4.1.6"
+    "version": "4.1.6",
+    "bin": {}
 }
 ```
 
