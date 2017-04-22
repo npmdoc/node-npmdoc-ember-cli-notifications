@@ -56,15 +56,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.environment">
-            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.importFontAwesome">
             function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
             <span class="apidocSignatureSpan">(app)</span>
@@ -95,64 +86,10 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.environment">module ember-cli-notifications.environment</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.environment.environment">
-            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.importFontAwesome">module ember-cli-notifications.importFontAwesome</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome">
-            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
-            <span class="apidocSignatureSpan">(app)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.ember-cli-notifications.included">module ember-cli-notifications.included</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.ember-cli-notifications.included.included">
-            function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
-            <span class="apidocSignatureSpan">(app)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.ember-cli-notifications" id="apidoc.module.ember-cli-notifications">module ember-cli-notifications</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.ember-cli-notifications.environment" id="apidoc.element.ember-cli-notifications.environment">
-        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">environment = function () {
-  return { };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 
     <h2>
@@ -224,104 +161,6 @@ if (config.includeFontAwesome) {
 
 
 
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ember-cli-notifications.environment" id="apidoc.module.ember-cli-notifications.environment">module ember-cli-notifications.environment</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.ember-cli-notifications.environment.environment" id="apidoc.element.ember-cli-notifications.environment.environment">
-        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>environment
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">environment = function () {
-  return { };
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ember-cli-notifications.importFontAwesome" id="apidoc.module.ember-cli-notifications.importFontAwesome">module ember-cli-notifications.importFontAwesome</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome" id="apidoc.element.ember-cli-notifications.importFontAwesome.importFontAwesome">
-        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>importFontAwesome
-        <span class="apidocSignatureSpan">(app)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">importFontAwesome = function (app) {
-  var projectConfig = this.project.config(app.env);
-  var config = projectConfig['ember-cli-notifications'] || { includeFontAwesome: false };
-
-  if (config.includeFontAwesome) {
-    app.import(app.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.eot', {
-      destDir: 'fonts'
-    });
-    app.import(app.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.svg', {
-      destDir: 'fonts'
-    });
-    app.import(app.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.ttf', {
-      destDir: 'fonts'
-    });
-    app.import(app.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.woff', {
-      destDir: 'fonts'
-    });
-    app.import(app.bowerDirectory + '/font-awesome/fonts/fontawesome-webfont.woff2', {
-      destDir: 'fonts'
-    });
-    app.import(app.bowerDirectory + '/font-awesome/css/font-awesome.css');
-  }
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  ]
-}
-  },
-
-  included: function(app) {
-this._super.included.call(this, app);
-
-this.<span class="apidocCodeKeywordSpan">importFontAwesome</span>(app);
-  },
-
-  importFontAwesome: function(app) {
-var projectConfig = this.project.config(app.env);
-var config = projectConfig['ember-cli-notifications'] || { includeFontAwesome: false };
-
-if (config.includeFontAwesome) {
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ember-cli-notifications.included" id="apidoc.module.ember-cli-notifications.included">module ember-cli-notifications.included</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.ember-cli-notifications.included.included" id="apidoc.element.ember-cli-notifications.included.included">
-        function <span class="apidocSignatureSpan">ember-cli-notifications.</span>included
-        <span class="apidocSignatureSpan">(app)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">included = function (app) {
-  this._super.included.call(this, app);
-
-  this.importFontAwesome(app);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
 
 
 </div>
